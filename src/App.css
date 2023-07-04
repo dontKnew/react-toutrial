@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  gap:5px;
+}
+.footer {
+  background-color: bisque;
+  text-align: center;
+  padding:5px;
+}
