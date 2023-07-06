@@ -2,7 +2,7 @@
 - Include CSS File
 - Inlcude JS File
 - Without Page Refresh Navigation With Routes
-- Form Elements & Submit Form
+- Form Submit & Get the data in console 
 - Call Fake API & Display Data
 
 ## Include CSS File
