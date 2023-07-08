@@ -1,9 +1,0 @@
-.header {
-  display: flex;
-  justify-content: space-around;
-  gap:5px;
-}
-.footer {
-  padding:5px;
-  width: 100%;
-}
