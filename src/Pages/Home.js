@@ -1,8 +1,10 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import SeoTag from './Element/SeoTag'
 function Contact() {
   return (
     <>
+    <SeoTag title="Home" />
     <Header />
     <div id="carouselExample" className="carousel slide">
     <div className="carousel-inner">

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import React, { useState, useEffect } from 'react';
 import AddPost from './Element/AddPost';
 import {DeletePost} from "./Element/DeletePost";
-import SeoTag from "./Element/SeoTag";
+import SeoTag from './Element/SeoTag'
 
 function Api() {
   const [data, setData] = useState([]);
@@ -21,22 +21,18 @@ function Api() {
       console.error('Error fetching data:', error);
     }
   };
-  const tag = {
-    title: 'My API Function',
-    description: 'My Description about api',
-    keywords: "Something about keywords here"
-  };
   return (
     <>
-      <SeoTag tag={tag} />
+        <SeoTag title="API Page" />
+
       <Header />
       <div className="container mt-4">
-        <div class="d-flex justify-content-between">
+        <div className="d-flex justify-content-between">
           <h3>Blog Table</h3> 
           <button className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" >Add Post</button>
         </div>
         
-        <table class="table table-striped table-hover">
+        <table className="table table-striped table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>

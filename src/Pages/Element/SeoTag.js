@@ -1,16 +1,17 @@
-import { Helmet } from 'react-helmet';
+import React from "react";
+import { Helmet, HelmetProvider } from 'react-helmet-async'; 
 
-export default function SeoTag({ tag }) {
+function SeoTags({ title }) {
   const currentUrl = window.location.href;
 
   return (
-    <>
+    <HelmetProvider>
       <Helmet>
-        <title>{tag.title}</title>
-        <meta name="description" content={tag.description} />
-        <meta name="keywords" content={tag.keywords} />
+        <title>{title}</title>
         <link rel="canonical" href={currentUrl} />
       </Helmet>
-    </>
+    </HelmetProvider>
   );
 }
+
+export default SeoTags;
