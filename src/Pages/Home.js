@@ -1,10 +1,10 @@
-import SeoTags from "./Element/SeoTag";
+
 import Footer from "./Footer";
 import Header from "./Header";
 function Contact() {
   return (
     <>
-    <SeoTags title="Home" metaDescription="Home Page Description" metaKeywords="Keywords Render" />
+    
     <Header />
     <div id="carouselExample" className="carousel slide">
     <div className="carousel-inner">

@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import React, { useState, useEffect } from 'react';
 import AddPost from './Element/AddPost';
 import {DeletePost} from "./Element/DeletePost";
-import SeoTag from "./Element/SeoTag";
+
 
 function Api() {
   const [data, setData] = useState([]);
@@ -28,7 +28,7 @@ function Api() {
   };
   return (
     <>
-      <SeoTag tag={tag} />
+      
       <Header />
       <div className="container mt-4">
         <div class="d-flex justify-content-between">
