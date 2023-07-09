@@ -3,9 +3,12 @@ import Footer from "./Footer";
 import React, { useState, useEffect } from 'react';
 import AddPost from './Element/AddPost';
 import {DeletePost} from "./Element/DeletePost";
-
+import SeoTags from './SeoTags';
 
 function Api() {
+  const title = "API Page";
+  const description = "API Page Description";
+  const keywords = "API Page Keywords";
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -21,14 +24,11 @@ function Api() {
       console.error('Error fetching data:', error);
     }
   };
-  const tag = {
-    title: 'My API Function',
-    description: 'My Description about api',
-    keywords: "Something about keywords here"
-  };
+
   return (
     <>
-      
+      <SeoTags title={title} description={description} keywords={keywords}  />
+
       <Header />
       <div className="container mt-4">
         <div class="d-flex justify-content-between">

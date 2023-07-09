@@ -1,7 +1,10 @@
 import Footer from "./Footer";
 import Header from "./Header";
-
+import SeoTags from './SeoTags';
 function Contact() {
+  const title = "Conact Page";
+  const description = "Contact Page Description";
+  const keywords = "Contact Page Keywords";
   const registrationForm = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -15,6 +18,7 @@ function Contact() {
   };
   return (
     <>
+      <SeoTags title={title} description={description} keywords={keywords}  />
       <Header />
       <section className='container mt-4'>
         <div className="container">

@@ -1,10 +1,16 @@
 
 import Footer from "./Footer";
 import Header from "./Header";
+import SeoTags from './SeoTags';
 function Contact() {
+  const title = "Home Page";
+  const description = "Home  Page Description";
+  const keywords = "Home Page Keywords";
+
   return (
     <>
-    
+    <SeoTags title={title} description={description} keywords={keywords}  />
+
     <Header />
     <div id="carouselExample" className="carousel slide">
     <div className="carousel-inner">

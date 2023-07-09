@@ -1,13 +1,12 @@
 ### Below Topics We have covered in this project : - 
-- Include CSS File - DONE
-- Inlcude JS File - DONE
-- Without Page Refresh Navigation With Routes - DONE
-- Form Submit & Get the data in console - DONE
-- Call Fake API & Display, Delete Data - DONE
-- Add Title and meta tag seo tags in head dynamically 
+- Include CSS File - __completed__
+- Inlcude JS File - __completed__
+- Without Page Refresh Navigation With Routes - __completed__
+- Form Submit & Get the data in console - __completed__
+- Call Fake API & Display, Delete Data - __completed__
+- Add Title and meta tag seo tags in head dynamically using SSR PHP Language & react helement - __completed__
 - Login & Logout
 - Error Handling and Error Boundaries
-
 
 ### Important topics in React.js that beginners and intermediate learners should focus on :
 1. **JSX (JavaScript XML)**:
@@ -42,3 +41,61 @@ Gain knowledge about React Router and how to implement client-side routing in yo
 
 These topics provide a solid foundation for beginners and intermediate learners in React.js. Understanding these concepts will enable you to build robust and interactive applications with React. As you progress, you can explore more advanced topics and libraries to expand your React skills further.
 
+
+
+## SSR With PHP 
+- define as well same meta tag and title information in react js app using react-helmet library :)
+```php 
+<?php
+$routes = $_SERVER['REQUEST_URI'];
+switch($routes){
+    case '/':
+        $title = "Home Page - Server";
+        $keywords = "Home Page Keywords - Server";
+        $description = "Home page Description - Server";
+        break;
+    case '/contact':
+        $title = "Contact Page - Server";
+        $keywords = "Contact Page Keywords - Server";
+        $description = "Contact page Description - Server";
+        break;
+
+    case '/about':
+            $title = "About Page - Server";
+            $keywords = "About Page Keywords - Server";
+            $description = "About page Description - Server";
+            break;
+    case '/api':
+        $title = "Api Page - Server";
+        $keywords = "Api Page Keywords - Server";
+        $description = "Api page Description - Server";
+        break;
+    default :
+        $title  = "404 Erorr - Server";
+        $keywords = "Page Not Found, Error - Server";
+        $description = "Page Not Found Description - Server";
+        break;
+}
+?>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="keywords" content="<?=$keywords?>" />
+    <meta name="description" content="<?=$description?>" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <title><?=$title?></title>
+    <script defer="defer" src="/static/js/main.cace2cfd.js"></script>
+    <link href="/static/css/main.0ba73d62.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+</body>
+
+</html>  
+```
