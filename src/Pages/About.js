@@ -9,7 +9,7 @@ function About() {
   return (
     <>
     <SeoTags title={title} description={description} keywords={keywords}  />
-    <Header />
+    <Header activeClass={"about"} />
     <section>
       <h1>About Section Here : ) </h1>
     </section>

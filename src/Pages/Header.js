@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({activeClass}) {
   return (
     <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
     <div className="container-fluid">
@@ -11,22 +11,22 @@ function Header() {
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item">
-            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+            <Link  className={`nav-link ${activeClass==='home' ? 'active bg-light text-dark p-2' : ''}`} aria-current="page"  to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/api">API</Link>
+            <Link className={`nav-link ${activeClass==='api' ? 'active bg-light text-dark p-2' : ''}`}  to="/api">API</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">About</Link>
+            <Link className={`nav-link ${activeClass==='about' ? 'active bg-light text-dark p-2' : ''}`}  to="/about">About</Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/contact">Contact</Link>
+            <Link className={`nav-link ${activeClass==='contact' ? 'active bg-light text-dark p-2' : ''}`}  to="/contact">Contact</Link>
           </li>
         </ul>
-        <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button className="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <div className="d-flex" role="search">
+          <button className="btn btn-warning mx-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button className="btn btn-success" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+        </div>
       </div>
     </div>
   </nav>

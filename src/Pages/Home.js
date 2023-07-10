@@ -11,7 +11,7 @@ function Contact() {
     <>
     <SeoTags title={title} description={description} keywords={keywords}  />
 
-    <Header />
+    <Header activeClass={"home"} />
     <div id="carouselExample" className="carousel slide">
     <div className="carousel-inner">
       <div className="carousel-item active">

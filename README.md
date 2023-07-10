@@ -4,8 +4,10 @@
 - Without Page Refresh Navigation With Routes - __completed__
 - Form Submit & Get the data in console - __completed__
 - Call Fake API & Display, Delete Data - __completed__
-- Add Title and meta tag seo tags in head dynamically using SSR PHP Language & react helement - __completed__
-- Login & Logout
+- Title and meta tags added via SSR PHP Language for source code & react helmet for client side - __completed__
+- Login & Logout __completed__
+- Form Validaton __completed__
+- Fontawesome library __completed__
 - Error Handling and Error Boundaries
 
 ### Important topics in React.js that beginners and intermediate learners should focus on :

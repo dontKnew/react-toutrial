@@ -1,8 +1,13 @@
+
 .header {
   display: flex;
   justify-content: space-around;
   gap:5px;
 }
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  border-radius: 5px;
+}
+
 .footer {
   padding:5px;
   width: 100%;

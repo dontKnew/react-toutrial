@@ -32,7 +32,7 @@ function DeletePost({ id }) {
         isSubmitting ? (
           <button className="btn btn-sm btn-danger">Deleting...</button>
         ) : (
-          <button className="btn btn-sm btn-danger" onClick={handleDelete} isDeleted={isDeleted}>
+          <button className="btn btn-sm btn-danger" onClick={handleDelete} >
             Delete
           </button>
         )

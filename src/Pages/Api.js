@@ -29,14 +29,14 @@ function Api() {
     <>
       <SeoTags title={title} description={description} keywords={keywords}  />
 
-      <Header />
+      <Header activeClass={"api"} />
       <div className="container mt-4">
-        <div class="d-flex justify-content-between">
+        <div className="d-flex justify-content-between">
           <h3>Blog Table</h3> 
           <button className="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" >Add Post</button>
         </div>
         
-        <table class="table table-striped table-hover">
+        <table className="table table-striped table-hover">
           <thead>
             <tr>
               <th scope="col">#</th>
